@@ -69,7 +69,7 @@ namespace CSCN71020Assign2UnitTestDriver
 			Assert::AreEqual(1, length);
 		}
 
-		// Test 3: Invalid case (Above valid range)
+		// Test 3: Invalid case (Below valid range)
 		TEST_METHOD(Test_SetLength_InvalidBelowRange)
 		{
 			// Arrange
@@ -100,7 +100,7 @@ namespace CSCN71020Assign2UnitTestDriver
 		}
 
 		// Test 2: Edge case (Maximum valid value = 99)
-		TEST_METHOD(Test_SetWidth_MinBoundaryValue)
+		TEST_METHOD(Test_SetWidth_MaxBoundaryValue)
 		{
 			// Arrange
 			int width = 10;
@@ -124,7 +124,7 @@ namespace CSCN71020Assign2UnitTestDriver
 			setWidth(input, &width);
 
 			// Assert
-			Assert::AreEqual(0, width); // Should NOT change
+			Assert::AreEqual(0, width);
 		}
 	};
 }
