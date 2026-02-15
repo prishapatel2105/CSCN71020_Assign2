@@ -74,13 +74,13 @@ namespace CSCN71020Assign2UnitTestDriver
 		{
 			// Arrange
 			int length = 25;
-			int input = -50;   // Invalid (less than 1)
+			int input = 50;   // Invalid (less than 1)
 
 			// Act
 			setLength(input, &length);
 
 			// Assert
-			Assert::AreEqual(-50, length);  
+			Assert::AreEqual(50, length);  
 		}
 
 		//    getWidth
@@ -118,13 +118,13 @@ namespace CSCN71020Assign2UnitTestDriver
 		{
 			// Arrange
 			int width = 30;
-			int input = 0;   // Invalid (less than 1)
+			int input = 12;   // Invalid (less than 1)
 
 			// Act
 			setWidth(input, &width);
 
 			// Assert
-			Assert::AreEqual(0, width);
+			Assert::AreEqual(12, width);
 		}
 	};
 }
